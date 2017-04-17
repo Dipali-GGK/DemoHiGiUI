@@ -34,7 +34,7 @@
     function sendMessage(message) {
 
         $.ajax({
-            "url": "/api/Patient/SendNotification",
+            "url": "http://localhost:50185/api/User/UpdateHealthData",
             "method": "POST",
             "data": JSON.stringify({ userId: message }),
             "contentType": "application/json"
